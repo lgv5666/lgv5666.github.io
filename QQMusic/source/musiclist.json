@@ -1,0 +1,42 @@
+[
+  {
+    "name":"Go Time",
+    "singer":"Mark Petrie",
+    "album":"未知",
+    "link_url":"source/MarkPetrie.mp3",
+    "cover":"img/201702151455491382.jpg",
+    "time":"02:16"
+  },
+  {
+    "name":"Dragon Rider",
+    "singer":"Two Steps From Hell",
+    "album":"未知",
+    "link_url":"source/DragonRider.mp3",
+    "cover":"img/201707281106543643.jpg",
+    "time":"01:55"
+  },
+  {
+    "name":"风一样的勇士",
+    "singer":"Various Artists",
+    "album":"未知",
+    "link_url":"source/VariousArtists.mp3",
+    "cover":"img/201702151452533692.jpg",
+    "time":"02:20"
+  },
+  {
+    "name":"Hope Always",
+    "singer":"X-Ray Dog",
+    "album":"未知",
+    "link_url":"source/HopeAlways.mp3",
+    "cover":"img/201702151456507998.jpg",
+    "time":"01:09"
+  },
+  {
+    "name":"万里的长城",
+    "singer":"太田美知彦",
+    "album":"デジモンアドベンチャー・シングルヒッ",
+    "link_url":"source/wanglidecc.mp3",
+    "cover":"img/201702151506312041.jpg",
+    "time":"01:35"
+  }
+]

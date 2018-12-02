@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+
+    <style>
+        nav {
+            width: 100%;
+            height: 85px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            display: flex;
+            justify-content: space-between;
+            z-index: 999;
+        }
+
+        nav > div:first-child {
+            display: flex;
+            /*justify-content:space-around;*/
+            /*flex-direction: column;*/
+            align-items: center;
+        }
+
+        nav > .more {
+            width: 150px;
+            color: #ffffff;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav > .more:hover + .right_menu {
+            right: 0px;
+        }
+
+        nav > .more > i {
+            font-size: 32px;
+            cursor: pointer;
+        }
+
+        .right_menu {
+            width: 150px;
+            height: 100%;
+            position: fixed;
+            top: 0px;
+            right: -150px;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: all 0.3s;
+        }
+
+        .right_menu:hover {
+            right: 0px;
+        }
+
+        .one {
+            width: 100%;
+            height: 100%;
+            background-color: #888888;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .one > video {
+            width: 100%;
+
+        }
+
+        .video_text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video_text > img {
+            width: 40%;
+        }
+
+        .video_text > span:last-child {
+            font-size: 35px;
+            animation: move 1.5s infinite;
+            font-size: 14px;
+        }
+
+        .video_text > span{
+            margin: 15px 0px;
+            padding: 8px 10px;
+            /*box-sizing: border-box;*/
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+        }
+        .iconfont{
+            padding: 5px !important;
+        }
+
+
+        @keyframes move {
+            0% {
+                transform: translateY(0px);
+            }
+            33% {
+                transform: translateY(8px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+
+        }
+
+        .two {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .two > img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .two > ul {
+            display: flex;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .two > ul > li {
+            padding: 10px;
+            margin-right: 10px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+<!--导航开始-->
+<nav>
+    <div><img src="img/logo.png" alt=""></div>
+    <div class="more">
+        三更多
+    </div>
+    <div class="right_menu"></div>
+</nav>
+<!--导航结束-->
+
+<!--第一屏开始-->
+<div class="one">
+    <video src="img/201702241034284066.mp4" autoplay loop></video>
+
+    <div class="video_text">
+        <img src="img/video_txt.png" alt="">
+        <span>下载迅雷产品</span>
+        <span class="iconfont">ⅴ</span>
+    </div>
+</div>
+<!--第一屏结束-->
+
+<!--第二屏开始-->
+<div class="two">
+    <img src="img/201702151451211820.jpg" alt="" id="img">
+    <ul>
+        <li onmouseenter="changeImg(0);">A</li>
+        <li onmouseenter="changeImg(1);">B</li>
+        <li onmouseenter="changeImg(2);">C</li>
+        <li onmouseenter="changeImg(3);">D</li>
+        <li onmouseenter="changeImg(4);">E</li>
+    </ul>
+</div>
+<!--第二屏结束-->
+<script>
+    var img = document.getElementById("img");
+
+    function changeImg(index) {
+        var imgs = ["201702151451211820.jpg", "201702151452362548.jpg", "201702151452533692.jpg", "201702151453082348.jpg", "201703011020173137.jpg"];
+        img.src = "img/" + imgs[index];
+    }
+</script>
+</body>
+</html>

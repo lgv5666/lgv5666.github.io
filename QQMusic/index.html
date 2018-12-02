@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="//at.alicdn.com/t/font_938197_fz0p1hbin3.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="js/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+<body>
+<div class="header">
+    <img class="logo" src="https://y.gtimg.cn/mediastyle/yqq/img/player_logo.png" alt="QQ音乐">
+    <ul class="register">
+        <li>登录</li>
+        <li>设置</li>
+    </ul>
+</div>
+<div class="content">
+    <div class="content_in">
+        <div class="content_left">
+            <div class="content_toolbar">
+                <span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shoucang"></use></svg>收藏</span>
+                <span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-tianjia"></use></svg>添加到</span>
+                <span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-xiazai"></use></svg>下载</span>
+                <span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shanchu"></use></svg>删除</span>
+                <span class="clear_li"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qingkong"></use></svg>清空列表</span>
+            </div>
+            <div class="content_list" data-mcs-theme="minimal-dark">
+                <ul>
+                    <li class="li_title">
+                        <div class="list_check "></div>
+                        <div class="list_number"></div>
+                        <div class="list_name">歌曲</div>
+                        <div class="list_singer">歌手</div>
+                        <div class="list_time">时长</div>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="content_right">
+                <div class="song_info">
+                    <a href="javascript:;">
+                        <img class="song_img" src="img/ygdx.jpg" alt="">
+                    </a>
+                    <div class="song_name">歌曲名:
+                        <a href="javascript:;"></a>
+                    </div>
+                    <div class="songer_name">歌手名:
+                        <a href="javascript:;"> </a>
+                    </div>
+                    <div class="song_ablum">专辑名:
+                        <a href="javascript:;"></a>
+                    </div>
+                </div>
+            <ul class="song_lyric">
+                <li>未匹配歌词</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_in">
+        <a class="music_pre" href="javascript:;" title="上一个"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shangyishoushangyige"></use></svg></a>
+        <a class="music_play" href="javascript:;" title="播放"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bofangsanjiaoxing"></use></svg></a>
+        <a class="music_next" href="javascript:;" title="下一个"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-xiayigexiayishou"></use></svg></a>
+        <div class="music_progress">
+            <div  class="music_play_info">
+                <span>歌曲名</span><span class="current_play_time">00:00</span><span>/00:00</span>
+            </div>
+            <div class="music_progress_bar">
+                <div class="music_progress_line">
+                    <div class="music_progress_dot"></div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 100%;width: 80px"></div>
+        <a class="music_voice" href="javascript:;" title="声音"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-shengyin"></use></svg></a>
+        <div class="music_voice_bar">
+            <div class="music_voice_line">
+                <div class="music_voice_dot"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="mask_bg"></div>
+<div class="mask"></div>
+<audio src="" preload="load"></audio>
+</body>
+</html>

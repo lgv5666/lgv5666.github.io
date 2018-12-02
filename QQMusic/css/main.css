@@ -1,0 +1,319 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: white;
+    overflow: hidden;
+}
+.icon_list_menu{
+    fill: white;
+    font-size: 20px;
+    vertical-align: -0.25em;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    /*background-color: red;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header>.logo{
+    margin-left: 10px;
+    opacity: 0.5;
+ }
+.header>.logo:hover,.header>.register>li:hover{
+    opacity: 1;
+}
+.header>.register>{
+    margin-right: 10px;
+
+}
+.header>.register>li{
+    float: left;
+    margin-right: 10px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.content{
+    width: 100%;
+    height: 480px;
+    /*background-color: blue;*/
+}
+.content>.content_in{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.content>.content_in>.content_left{
+    width: 66%;
+    height: 100%;
+    float: left;
+    /*background-color: pink;*/
+}
+.content_left>.content_toolbar{
+    width: 100%;
+    height: 40px;
+    /*background-color: black;*/
+}
+.content_left>.content_toolbar:first-child{
+    margin-left: 80px;
+}
+.content_toolbar>span{
+    display: inline-block;
+    width: 122px;
+    height: 100%;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 40px;
+    opacity: 0.5;
+
+}
+.content_toolbar>span>svg{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.content_toolbar>span:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.content_left>.content_list{
+    width: 80%;
+    height: 440px;
+    /*background-color: purple;*/
+    overflow: auto;
+    margin-left: 80px;
+}
+.content_list li{
+    width: 100%;
+    height: 50px;
+    /*background-color: orange;*/
+    display: flex;
+    align-items: center;
+    color: rgba(255,255,255,0.5);
+    /*opacity: 0.5;*/
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    user-select: none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+}
+.content_list .list_check{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    margin-right: 20px;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+.content_list .list_number{
+    width: 20px;
+}
+.content_list .list_number_play{
+    color: transparent;
+    background: url("../img/wave.gif") no-repeat 0 center;
+}
+.content_list .list_name{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    line-height: 50px;
+}
+.list_menu_wrap{
+    display: none;
+}
+.list_menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.list_menu>a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 36px;
+    opacity: 0.5;
+}
+.list_menu>a:hover{
+    opacity: 1;
+}
+.content_list .list_singer{
+    flex-grow: 1;
+    /*width: 20%;*/
+}
+.content_list .list_time{
+    position: relative;
+    height: 100%;
+    line-height: 50px;
+    width: 80px;
+}
+.content_list .list_time>.list_menu_wrap,.list_time>.list_menu_wrap>.list_menu{
+    width: 100%;
+}
+.content_list .list_time a{
+    margin-right: 0;
+}
+.content>.content_in>.content_right{
+    width: 34%;
+    height: 100%;
+    float: right;
+    /*background-color: #ccc;*/
+    color: white;
+}
+.song_info{
+    text-align: center;
+    line-height: 25px;
+}
+.content_right>.song_info>a{
+    display: inline-block;
+    width: 201px;
+    height: 180px;
+    background: url("../img/album_cover_player.png") no-repeat 0 0;
+    text-align: left;
+}
+.content_right>.song_info>a>img{
+    width: 180px;
+    height: 180px;
+}
+.song_info>div>a{
+    color: #fff;
+}
+.content_right>.song_lyric{
+    margin-top: 40px;
+}
+.content_right>.song_lyric>li{
+    text-align: center;
+}
+
+
+.footer>.footer_in{
+    width: 1200px;
+    height: 100%;
+    /*background-color: plum;*/
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+}
+.footer_in a{
+    display: inline-block;
+    font-size: 25px;
+    width: 40px;
+    text-align: center;
+}
+.footer_in>.music_play{
+    font-size: 35px;
+}
+
+
+.music_voice_bar{
+    width: 180px;
+    height: 4px;
+    background-color: rgba(255,255,255,0.5);
+}
+.music_voice_line{
+    width: 60px;
+    height: 100%;
+    background-color: white;
+}
+.music_voice_dot{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: relative;
+    left: 60px;
+    top: -5px;
+    background-color: white;
+}
+
+.footer_in .music_progress{
+    width: 600px;
+    height: 100%;
+    /*background-color: red;*/
+}
+.music_progress .music_play_info{
+    /*background-color: black;*/
+    color: white;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+
+}
+.music_progress .music_play_info>span:first-child{
+    flex-grow: 1;
+}
+.music_progress_bar{
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255,255,255,0.5);
+    margin-top: 10px;
+    position: relative;
+}
+.music_progress_line{
+    width: 0px;
+    height: 100%;
+    background-color: white;
+}
+.music_progress_dot{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+}
+.footer{
+    width: 100%;
+    height: 80px;
+    /*background-color: green;*/
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.mask_bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background: url("../img/ygdx.jpg");
+    background-size: cover;
+    filter: blur(25px);
+}
+.mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.45);
+}
+.content_list .selected {
+    background-color: white;
+    opacity: 1;
+}
+._mCS_1 .mCSB_scrollTools .mCSB_dragger_bar{
+    width:8px;
+}
+
