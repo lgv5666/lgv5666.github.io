@@ -52,7 +52,7 @@ function Player($audio) {
                 }
             }else{
                 this.$audio.attr("src",music.link_url);
-                this.audio.play();
+                console.log(this.audio.play());
                 this.currentIndex = index;
                 this.hightLightLi();
                 changeMusicInfo(music);
